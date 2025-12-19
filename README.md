@@ -11,6 +11,7 @@ A modern, responsive website for Chotu Marketplace built with Next.js 14, Tailwi
 - 🏪 Dedicated pages for Retailers and Distributors
 - 📖 About Us page
 - 🌐 Structured for i18n support (English/Hindi)
+- 🚀 Ready for GitHub Pages deployment
 
 ## Tech Stack
 
@@ -42,6 +43,55 @@ npm run dev
 
 3. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+## GitHub Pages Deployment
+
+### Option 1: Automatic Deployment (Recommended)
+
+The repository includes a GitHub Actions workflow that automatically builds and deploys your site when you push to the `main` branch.
+
+1. Go to your repository settings on GitHub
+2. Navigate to **Pages** in the left sidebar
+3. Under **Source**, select **GitHub Actions**
+4. Push your changes to the `main` branch
+5. The workflow will automatically build and deploy your site
+
+Your site will be available at: `https://happysanghadia.github.io/ChotuAI/`
+
+### Option 2: Manual Deployment
+
+1. Build the static site:
+```bash
+npm run build
+```
+
+2. Copy files to root (or use the deploy script):
+```bash
+./deploy.sh
+```
+
+3. Commit and push:
+```bash
+git add .
+git commit -m "Deploy to GitHub Pages"
+git push
+```
+
+4. In GitHub repository settings:
+   - Go to **Pages**
+   - Select **Deploy from a branch**
+   - Choose **main** branch and **/ (root)** folder
+   - Click **Save**
+
+### Important: Base Path Configuration
+
+If your GitHub Pages URL includes the repository name (e.g., `https://username.github.io/repo-name/`), you need to set a basePath in `next.config.js`:
+
+```javascript
+basePath: '/ChotuAI',
+```
+
+Then rebuild and redeploy.
+
 ## Project Structure
 
 ```
@@ -60,8 +110,12 @@ npm run dev
 │   ├── FeatureCard.tsx # Feature card component
 │   ├── StepProcess.tsx # Step process component
 │   └── TrustBadge.tsx  # Trust badge component
-└── lib/
-    └── utils.ts        # Utility functions
+├── .github/
+│   └── workflows/
+│       └── deploy.yml  # GitHub Actions deployment workflow
+├── lib/
+│   └── utils.ts        # Utility functions
+└── index.html          # Root HTML file for GitHub Pages
 ```
 
 ## Design System
@@ -90,13 +144,8 @@ To create a production build:
 npm run build
 ```
 
-To start the production server:
-
-```bash
-npm start
-```
+The static files will be generated in the `out/` directory.
 
 ## License
 
 © 2024 Chotu Commerce. All rights reserved.
-
