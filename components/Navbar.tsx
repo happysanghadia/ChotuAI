@@ -9,9 +9,8 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
     const navLinks = [
-        { href: "/", label: "Home" },
-        { href: "/retailers", label: "For Retailers" },
         { href: "/distributors", label: "For Distributors" },
+        { href: "/retailers", label: "For Retailers" },
         { href: "/about", label: "About Us" },
     ]
 
