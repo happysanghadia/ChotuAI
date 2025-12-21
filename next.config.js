@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/ChotuAI',
+  // Only use basePath in production (for GitHub Pages)
+  basePath: process.env.NODE_ENV === 'production' ? '/ChotuAI' : '',
   images: {
     unoptimized: true,
   },
