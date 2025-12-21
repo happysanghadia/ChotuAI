@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { Youtube, Facebook, MessageCircle } from "lucide-react"
+import Badge from "./Badge"
 
 export default function Footer() {
     return (
@@ -36,18 +37,10 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="/retailer-agreement"
+                                    href="/agreements"
                                     className="text-sm text-gray-600 hover:text-primary"
                                 >
-                                    Retailer Agreement
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="/master-seller-agreement"
-                                    className="text-sm text-gray-600 hover:text-primary"
-                                >
-                                    Master Seller Agreement
+                                    Agreements
                                 </Link>
                             </li>
                         </ul>
@@ -119,8 +112,15 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="mt-8 border-t pt-8 text-center text-sm text-gray-600">
-                    <p>© 2024 Chotu Commerce. All rights reserved.</p>
+                {/* Badges Section */}
+                <div className="mt-8 border-t pt-8">
+                    <div className="flex flex-wrap items-center justify-center gap-4 mb-6">
+                        <Badge name="Startup India" />
+                        <Badge name="ONDC Compatible" />
+                    </div>
+                    <div className="text-center text-sm text-gray-600">
+                        <p>© 2024 Chotu Commerce. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
         </footer>
