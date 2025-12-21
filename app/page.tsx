@@ -59,8 +59,8 @@ export default function Home() {
         <>
             {/* Hero Section with Panning Animation */}
             <PanningHero
-                mainTagline="Your Friendly Neighbourhood shopping assistant"
-                subText="Brought to you by your neighbourhood Retailer"
+                mainTagline="Chotu AI - Your Friendly Neighbourhood shopping assistant"
+                subText="AI shopping assistant brought straight to your phone by your neighbourhood Retailer"
                 badgeText="Local Kiranas are going digital"
                 ctaText="Download App"
                 ctaLink="/download"
@@ -105,6 +105,37 @@ export default function Home() {
                             description="Order from home, delivered by the shop you know."
                             delay={0.1}
                         />
+                    </div>
+                </div>
+            </section>
+
+            {/* Digital Wallet Section */}
+            <section className="py-12 sm:py-16 lg:py-24 bg-white">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="max-w-4xl mx-auto">
+                        <Card className="border-2 border-primary/20 bg-gradient-to-br from-primary/5 to-secondary/5">
+                            <CardContent className="p-8 sm:p-12">
+                                <div className="flex items-start space-x-4 mb-6">
+                                    <div className="flex-shrink-0">
+                                        <div className="rounded-full bg-primary/10 p-4">
+                                            <Shield className="h-8 w-8 text-primary" />
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+                                            Digital Wallet with Credit Up to ₹5,000
+                                        </h2>
+                                        <p className="text-lg text-gray-700 leading-relaxed">
+                                            Get instant credit approval from your neighbourhood retailer. Shop now and pay later 
+                                            with a digital wallet that offers up to ₹5,000 in credit. Settle your balance 
+                                            bi-weekly or monthly, just like your traditional khata, but with the convenience 
+                                            of digital payments. No credit checks, no complicated processes—just trust between 
+                                            you and your local store, digitized for the modern age.
+                                        </p>
+                                    </div>
+                                </div>
+                            </CardContent>
+                        </Card>
                     </div>
                 </div>
             </section>
@@ -166,22 +197,13 @@ export default function Home() {
                         <p className="text-lg sm:text-xl mb-8 opacity-90">
                             Join thousands of families who are shopping smarter with Chotu.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <div className="flex justify-center">
                             <a href="/download">
                                 <Button
                                     size="lg"
                                     className="rounded-full bg-white text-primary px-8 py-6 text-base hover:bg-gray-100"
                                 >
                                     Download App
-                                </Button>
-                            </a>
-                            <a href="/retailers">
-                                <Button
-                                    size="lg"
-                                    variant="outline"
-                                    className="rounded-full border-2 border-white text-white px-8 py-6 text-base hover:bg-white/10"
-                                >
-                                    For Retailers
                                 </Button>
                             </a>
                         </div>
