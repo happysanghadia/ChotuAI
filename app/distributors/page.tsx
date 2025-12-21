@@ -99,8 +99,8 @@ export default function DistributorsPage() {
         <>
             {/* Hero Section */}
             <HeroSection
-                headline="Reach Customers Through Authorized Retailers"
-                subheadline="No Risk. Push Targeted Schemes. Empower MSMEs."
+                headline="From Distributor to Master Seller"
+                subheadline="Reach customers directly through your authorized retailer network. Launch targeted schemes, track real-time consumption, and grow your business with zero credit risk while empowering local MSMEs."
                 ctaText="Become a Master Seller"
                 ctaLink="/distributors/register"
             />
@@ -261,7 +261,7 @@ export default function DistributorsPage() {
                                 <CardDescription className="text-base">
                                     Create promotional schemes and offers. Our AI agent automatically pushes these to relevant 
                                     households based on their purchase history and preferences. Customers see your offers 
-                                    through their local retailer&apos;s digital storefront, maintaining the trust of shopping locally.
+                                    through their local retailer's digital storefront, maintaining the trust of shopping locally.
                                 </CardDescription>
                             </CardContent>
                         </Card>

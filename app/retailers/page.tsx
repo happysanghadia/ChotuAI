@@ -66,7 +66,7 @@ export default function RetailersPage() {
         {
             icon: Users,
             title: "Wider Customer Reach",
-            description: "Reach customers who haven&apos;t walked into your shop yet, but live in your neighborhood.",
+            description: "Reach customers who haven't walked into your shop yet, but live in your neighborhood.",
             details: "Expand your customer base without expensive marketing. Your digital storefront is discoverable by everyone nearby."
         },
     ]
@@ -78,7 +78,7 @@ export default function RetailersPage() {
         },
         {
             title: "Automated Catalog Sync",
-            description: "Your inventory updates automatically from your distributor&apos;s master catalog. No manual entry needed."
+            description: "Your inventory updates automatically from your distributor's master catalog. No manual entry needed."
         },
         {
             title: "Data-Driven Decisions",
@@ -89,7 +89,7 @@ export default function RetailersPage() {
     const faqs = [
         {
             question: "Do I need a delivery fleet?",
-            answer: "No, you don&apos;t need a separate delivery fleet. Use your existing staff or delivery partners. Deliveries are scheduled, not instant, so you can plan them around your regular shop hours."
+            answer: "No, you don't need a separate delivery fleet. Use your existing staff or delivery partners. Deliveries are scheduled, not instant, so you can plan them around your regular shop hours."
         },
         {
             question: "How do I get paid?",
@@ -97,15 +97,15 @@ export default function RetailersPage() {
         },
         {
             question: "How do I manage inventory?",
-            answer: "You don&apos;t need to manually manage inventory. The system syncs with your distributor&apos;s master catalog. You just toggle items as &apos;In Stock&apos; or &apos;Out of Stock&apos; when needed."
+            answer: "You don't need to manually manage inventory. The system syncs with your distributor's master catalog. You just toggle items as 'In Stock' or 'Out of Stock' when needed."
         },
         {
-            question: "What if I don&apos;t have a smartphone?",
+            question: "What if I don't have a smartphone?",
             answer: "Our platform works on basic smartphones. We provide training and support to help you get started. The interface is simple and designed for ease of use."
         },
         {
             question: "Will this affect my regular walk-in customers?",
-            answer: "Not at all! This is an additional channel for your business. Your regular customers can still shop in-store, and you&apos;ll also get new online orders from the neighborhood."
+            answer: "Not at all! This is an additional channel for your business. Your regular customers can still shop in-store, and you'll also get new online orders from the neighborhood."
         },
         {
             question: "How quickly can I start receiving orders?",
@@ -126,8 +126,8 @@ export default function RetailersPage() {
             {/* Hero Section */}
             <HeroSection
                 headline="Your Digital Store"
-                subheadline="Brought to you by your distributors."
-                ctaText="Request your Distributor"
+                subheadline="Transform your kirana store into a digital business with zero upfront costs. Get automatic inventory sync, scheduled deliveries, guaranteed monthly payments, and reach more customers in your neighborhood—all brought to you by your trusted distributor."
+                ctaText="Contact your Distributor"
                 ctaLink="/retailers/request"
             />
 
@@ -284,7 +284,7 @@ export default function RetailersPage() {
                             <CardContent>
                                 <CardDescription className="text-base">
                                     All payments are digital and secure. You receive monthly settlements directly to your merchant 
-                                    wallet. No cash handling, no payment delays, and zero credit risk. It&apos;s that simple.
+                                    wallet. No cash handling, no payment delays, and zero credit risk. It's that simple.
                                 </CardDescription>
                             </CardContent>
                         </Card>
@@ -330,7 +330,7 @@ export default function RetailersPage() {
                                 size="lg"
                                 className="rounded-full bg-white text-primary px-8 py-6 text-base hover:bg-gray-100"
                             >
-                                Request your Distributor
+                                Contact your Distributor
                                 <ArrowRight className="ml-2 h-5 w-5" />
                             </Button>
                         </a>
