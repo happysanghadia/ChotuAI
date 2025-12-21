@@ -261,7 +261,7 @@ export default function DistributorsPage() {
                                 <CardDescription className="text-base">
                                     Create promotional schemes and offers. Our AI agent automatically pushes these to relevant 
                                     households based on their purchase history and preferences. Customers see your offers 
-                                    through their local retailer's digital storefront, maintaining the trust of shopping locally.
+                                    through their local retailer&apos;s digital storefront, maintaining the trust of shopping locally.
                                 </CardDescription>
                             </CardContent>
                         </Card>

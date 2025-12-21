@@ -284,7 +284,7 @@ export default function RetailersPage() {
                             <CardContent>
                                 <CardDescription className="text-base">
                                     All payments are digital and secure. You receive monthly settlements directly to your merchant 
-                                    wallet. No cash handling, no payment delays, and zero credit risk. It's that simple.
+                                    wallet. No cash handling, no payment delays, and zero credit risk. It&apos;s that simple.
                                 </CardDescription>
                             </CardContent>
                         </Card>
