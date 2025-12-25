@@ -144,7 +144,7 @@ export default function RetailersPage() {
                                     </CardContent>
                                 </Card>
                             </motion.div>
-                        )
+                        ))}
                     </div>
                 </div>
             </section>
@@ -193,7 +193,7 @@ export default function RetailersPage() {
                                             <p className="text-gray-600">{point.description}</p>
                                         </div>
                                     </div>
-                                )
+                                ))}
                             </div>
                         </motion.div>
 
@@ -288,7 +288,7 @@ export default function RetailersPage() {
                                             </CardContent>
                                         </Card>
                                     </motion.div>
-                                )
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -353,7 +353,7 @@ export default function RetailersPage() {
                                     </CardContent>
                                 </Card>
                             </motion.div>
-                        )
+                        ))}
                     </div>
                 </div>
             </section>
@@ -417,7 +417,7 @@ export default function RetailersPage() {
                                         </p>
                                     </div>
                                 </motion.div>
-                            )
+                            ))}
                         </div>
                     </div>
                 </div>

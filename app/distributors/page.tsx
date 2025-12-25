@@ -10,7 +10,6 @@ import { Upload, Users, Target, Shield, Network, FileCheck, BarChart3, CreditCar
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { getAssetPath } from "@/lib/utils"
-import { getAssetPath } from "@/lib/utils"
 
 export default function DistributorsPage() {
     const steps = [
@@ -220,7 +219,7 @@ export default function DistributorsPage() {
                                     </CardContent>
                                 </Card>
                             </motion.div>
-                        )
+                        ))}
                     </div>
                 </div>
             </section>
@@ -276,7 +275,7 @@ export default function DistributorsPage() {
                                             </CardContent>
                                         </Card>
                                     </motion.div>
-                                )
+                                ))}
                             </div>
 
                             {/* Central Visual */}
@@ -335,7 +334,7 @@ export default function DistributorsPage() {
                                             </CardContent>
                                         </Card>
                                     </motion.div>
-                                )
+                                ))}
                             </div>
                         </div>
                     </div>
@@ -396,7 +395,7 @@ export default function DistributorsPage() {
                                             </div>
                                         </CardHeader>
                                     </Card>
-                                )
+                                ))}
                             </motion.div>
                         </div>
                     </div>
@@ -461,7 +460,7 @@ export default function DistributorsPage() {
                                     </CardContent>
                                 </Card>
                             </motion.div>
-                        )
+                        ))}
                     </div>
                 </div>
             </section>
