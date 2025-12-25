@@ -10,6 +10,7 @@ import { Upload, Users, Target, Shield, Network, FileCheck, BarChart3, CreditCar
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { getAssetPath } from "@/lib/utils"
+import { getAssetPath } from "@/lib/utils"
 
 export default function DistributorsPage() {
     const steps = [
@@ -38,25 +39,25 @@ export default function DistributorsPage() {
             icon: Target,
             title: "Scheme Management",
             description: "Create offers and approve retailer offers instantly.",
-            image: getAssetPath("/assets/distributors/Icons/Scheme.png"))},
+            image: getAssetPath("/assets/distributors/Icons/Scheme.png"),
         },
         {
             icon: Network,
             title: "Targeting",
             description: "Push targeted schemes directly to household AI agents.",
-            image: getAssetPath("/assets/distributors/Icons/Target.png"))},
+            image: getAssetPath("/assets/distributors/Icons/Target.png"),
         },
         {
             icon: Shield,
             title: "Risk Free",
             description: "Zero credit risk. Secure payments.",
-            image: getAssetPath("/assets/distributors/Icons/Protection.png"))},
+            image: getAssetPath("/assets/distributors/Icons/Protection.png"),
         },
         {
             icon: Users,
             title: "Network",
             description: "Reach the end consumer through your existing authorized retailer network.",
-            image: getAssetPath("/assets/distributors/Icons/People 80px.png"))},
+            image: getAssetPath("/assets/distributors/Icons/People 80px.png"),
         },
     ]
 
@@ -66,28 +67,28 @@ export default function DistributorsPage() {
             title: "Real-Time Analytics",
             description: "Track actual consumption patterns, not just purchase orders. See what households really buy and when they buy it.",
             details: "Get insights into consumer behavior, seasonal trends, and product performance across your entire network.",
-            image: getAssetPath("/assets/distributors/Icons/Analytics.png"))},
+            image: getAssetPath("/assets/distributors/Icons/Analytics.png"),
         },
         {
             icon: Zap,
             title: "Instant Scheme Deployment",
             description: "Launch promotional offers in minutes. Push them directly to relevant households through AI agents.",
             details: "No more waiting for retailers to communicate offers. Your schemes reach customers instantly and automatically.",
-            image: getAssetPath("/assets/distributors/Icons/Fast.png"))},
+            image: getAssetPath("/assets/distributors/Icons/Fast.png"),
         },
         {
             icon: CreditCard,
             title: "Secure Payment Gateway",
             description: "All transactions are secure and digital. Get paid on time, every time, with zero credit risk.",
             details: "Our wallet system ensures you receive payments directly, eliminating the traditional credit cycle and payment delays.",
-            image: getAssetPath("/assets/distributors/Icons/Protection 40px.png"))},
+            image: getAssetPath("/assets/distributors/Icons/Protection 40px.png"),
         },
         {
             icon: TrendingUp,
             title: "Growth Through Data",
             description: "Leverage consumption data to optimize inventory, pricing, and marketing strategies.",
             details: "Make data-driven decisions about which products to promote, when to launch schemes, and how to expand your reach.",
-            image: getAssetPath("/assets/distributors/Icons/Growth.png"))},
+            image: getAssetPath("/assets/distributors/Icons/Growth.png"),
         },
     ]
 
@@ -219,7 +220,7 @@ export default function DistributorsPage() {
                                     </CardContent>
                                 </Card>
                             </motion.div>
-                        ))}
+                        )
                     </div>
                 </div>
             </section>
@@ -275,7 +276,7 @@ export default function DistributorsPage() {
                                             </CardContent>
                                         </Card>
                                     </motion.div>
-                                ))}
+                                )
                             </div>
 
                             {/* Central Visual */}
@@ -334,7 +335,7 @@ export default function DistributorsPage() {
                                             </CardContent>
                                         </Card>
                                     </motion.div>
-                                ))}
+                                )
                             </div>
                         </div>
                     </div>
@@ -395,7 +396,7 @@ export default function DistributorsPage() {
                                             </div>
                                         </CardHeader>
                                     </Card>
-                                ))}
+                                )
                             </motion.div>
                         </div>
                     </div>
@@ -460,7 +461,7 @@ export default function DistributorsPage() {
                                     </CardContent>
                                 </Card>
                             </motion.div>
-                        ))}
+                        )
                     </div>
                 </div>
             </section>

@@ -97,17 +97,17 @@ export default function RetailersPage() {
                             {
                                 title: "Your Digital Storefront",
                                 description: "Get a professional online identity without hiring tech support. Your shop is now open to the entire digital neighbourhood.",
-                                icon: "/assets/retailers/Icons/R-Store.png")},
+                                icon: getAssetPath("/assets/retailers/Icons/R-Store.png"),
                             },
                             {
                                 title: "Wider Customer Reach",
                                 description: "Don't just wait for walk-ins. Capture orders from neighbors who are looking for convenience but trust your quality.",
-                                icon: "/assets/retailers/Icons/R-people.png")},
+                                icon: getAssetPath("/assets/retailers/Icons/R-people.png"),
                             },
                             {
                                 title: "Increase Sales Volume",
                                 description: "Get scheduled delivery orders daily. Fill the gaps in your day with productive sales, boosting your monthly revenue.",
-                                icon: "/assets/retailers/Icons/R-Growth.png")},
+                                icon: getAssetPath("/assets/retailers/Icons/R-Growth.png"),
                             },
                         ].map((item, index) => (
                             <motion.div
@@ -144,7 +144,7 @@ export default function RetailersPage() {
                                     </CardContent>
                                 </Card>
                             </motion.div>
-                        ))}
+                        )
                     </div>
                 </div>
             </section>
@@ -193,7 +193,7 @@ export default function RetailersPage() {
                                             <p className="text-gray-600">{point.description}</p>
                                         </div>
                                     </div>
-                                ))}
+                                )
                             </div>
                         </motion.div>
 
@@ -246,12 +246,12 @@ export default function RetailersPage() {
                                     {
                                         title: "Guaranteed Monthly Payments",
                                         description: "All digital orders are tracked accurately. You receive a guaranteed payment every month directly to your bank account.",
-                                        icon: "/assets/retailers/Icons/R-Calender.png")},
+                                        icon: getAssetPath("/assets/retailers/Icons/R-Calender.png"),
                                     },
                                     {
                                         title: "No Upfront Capital Risk",
                                         description: "Under the Zero-risk model, you don't pay upfront. Your stock are on your credit. We handle the customer credit.",
-                                        icon: "/assets/retailers/Icons/R-protection.png")},
+                                        icon: getAssetPath("/assets/retailers/Icons/R-protection.png"),
                                     },
                                 ].map((item, index) => (
                                     <motion.div
@@ -288,7 +288,7 @@ export default function RetailersPage() {
                                             </CardContent>
                                         </Card>
                                     </motion.div>
-                                ))}
+                                )
                             </div>
                         </div>
                     </div>
@@ -306,17 +306,17 @@ export default function RetailersPage() {
                             {
                                 title: "Zero Inventory Management",
                                 description: "Since inventory syncs from the master catalog, you never have to count, track, or manage stock manually.",
-                                icon: "/assets/retailers/Icons/Order.png")},
+                                icon: getAssetPath("/assets/retailers/Icons/Order.png"),
                             },
                             {
                                 title: "Scheduled Deliveries",
                                 description: "Focus on running your store. We handle the delivery for every single order. Customers select their slots, you just pack.",
-                                icon: "/assets/retailers/Icons/R-delivery.png")},
+                                icon: getAssetPath("/assets/retailers/Icons/R-delivery.png"),
                             },
                             {
                                 title: "Lean Operations",
                                 description: "No new delivery boys needed. Work with your existing staff, just pack orders and hand them over to our delivery partners.",
-                                icon: "/assets/retailers/Icons/Time.png")},
+                                icon: getAssetPath("/assets/retailers/Icons/Time.png"),
                             },
                         ].map((item, index) => (
                             <motion.div
@@ -353,7 +353,7 @@ export default function RetailersPage() {
                                     </CardContent>
                                 </Card>
                             </motion.div>
-                        ))}
+                        )
                     </div>
                 </div>
             </section>
@@ -417,7 +417,7 @@ export default function RetailersPage() {
                                         </p>
                                     </div>
                                 </motion.div>
-                            ))}
+                            )
                         </div>
                     </div>
                 </div>
