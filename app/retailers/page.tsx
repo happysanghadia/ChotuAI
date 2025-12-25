@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 import {
     Accordion,
     AccordionContent,
@@ -27,7 +28,7 @@ export default function RetailersPage() {
     return (
         <>
             {/* Section A: Hero */}
-            <section className="relative overflow-hidden bg-gradient-to-r from-orange-50 to-white py-12 sm:py-16 lg:py-24">
+            <section className="relative overflow-hidden bg-gradient-to-br from-green-500 via-green-400 to-white py-12 sm:py-16 lg:py-24">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-12">
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:items-center">
                         {/* Text Content */}
@@ -38,17 +39,17 @@ export default function RetailersPage() {
                             className="space-y-6 text-center lg:text-left"
                         >
                             {/* Badge */}
-                            <div className="inline-flex items-center rounded-full border border-orange-300 bg-orange-50 px-4 py-2 text-sm font-medium text-orange-700">
+                            <div className="inline-flex items-center rounded-full border border-green-300 bg-white px-4 py-2 text-sm font-medium text-green-700">
                                 Brought to you by YOUR Distributor
                             </div>
 
                             {/* Headline */}
-                            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl lg:text-6xl">
+                            <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
                                 Your Digital Storefront. Zero Setup. Zero Inventory Work.
                             </h1>
 
                             {/* Description */}
-                            <p className="text-lg text-gray-600 sm:text-xl max-w-xl mx-auto lg:mx-0">
+                            <p className="text-lg text-white/90 sm:text-xl max-w-xl mx-auto lg:mx-0">
                                 Join the digital revolution backed by your trusted distributor. Get more customers, guaranteed monthly payments, and effortless inventory sync.
                             </p>
 
@@ -56,7 +57,7 @@ export default function RetailersPage() {
                             <div>
                                 <Button
                                     size="lg"
-                                    className="rounded-full bg-orange-600 px-8 py-6 text-base hover:bg-orange-700 text-white"
+                                    className="rounded-full bg-white text-green-600 px-8 py-6 text-base hover:bg-gray-100 font-semibold"
                                 >
                                     Request Your Distributor
                                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -64,19 +65,21 @@ export default function RetailersPage() {
                             </div>
                         </motion.div>
 
-                        {/* Visual Placeholder */}
+                        {/* Retailer Character */}
                         <motion.div
                             initial={{ opacity: 0, x: 20 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.6, delay: 0.2 }}
-                            className="relative h-[400px] w-full lg:h-[500px]"
+                            className="relative h-[400px] w-full lg:h-[500px] flex items-center justify-center"
                         >
-                            <div className="flex h-full items-center justify-center rounded-lg bg-gradient-to-br from-orange-100 to-blue-100">
-                                <div className="text-center">
-                                    <Smartphone className="mx-auto h-32 w-32 text-orange-600" />
-                                    <p className="mt-4 text-sm text-gray-600">Happy retailer with Chotu mascot</p>
-                                </div>
-                            </div>
+                            <Image
+                                src="/images/retailers/Avatars/Retailer + shop 3d.png"
+                                alt="Happy retailer with shop"
+                                width={500}
+                                height={500}
+                                className="object-contain"
+                                priority
+                            />
                         </motion.div>
                     </div>
                 </div>
@@ -89,68 +92,58 @@ export default function RetailersPage() {
                         Grow Your Business, Not Your Workload
                     </h2>
                     <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <Card className="h-full border-2 hover:shadow-lg transition-shadow hover:-translate-y-1">
-                                <CardHeader>
-                                    <div className="mb-4 inline-flex rounded-lg bg-orange-100 p-3">
-                                        <Store className="h-6 w-6 text-orange-600" />
+                        {[
+                            {
+                                title: "Your Digital Storefront",
+                                description: "Get a professional online identity without hiring tech support. Your shop is now open to the entire digital neighbourhood.",
+                                icon: "/images/retailers/Icons/R-Store.png",
+                            },
+                            {
+                                title: "Wider Customer Reach",
+                                description: "Don't just wait for walk-ins. Capture orders from neighbors who are looking for convenience but trust your quality.",
+                                icon: "/images/retailers/Icons/R-people.png",
+                            },
+                            {
+                                title: "Increase Sales Volume",
+                                description: "Get scheduled delivery orders daily. Fill the gaps in your day with productive sales, boosting your monthly revenue.",
+                                icon: "/images/retailers/Icons/R-Growth.png",
+                            },
+                        ].map((item, index) => (
+                            <motion.div
+                                key={item.title}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                            >
+                                <Card className="h-full border-2 hover:shadow-lg transition-shadow hover:-translate-y-1 relative overflow-hidden">
+                                    <div className="absolute inset-0 opacity-5">
+                                        <Image
+                                            src="/images/retailers/Card Background/R-card section 2.png"
+                                            alt=""
+                                            fill
+                                            className="object-cover"
+                                        />
                                     </div>
-                                    <CardTitle className="text-xl">Your Digital Storefront</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <CardDescription className="text-base">
-                                        Get a professional online identity without hiring tech support. Your shop is now open to the entire digital neighbourhood.
-                                    </CardDescription>
-                                </CardContent>
-                            </Card>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: 0.1 }}
-                        >
-                            <Card className="h-full border-2 hover:shadow-lg transition-shadow hover:-translate-y-1">
-                                <CardHeader>
-                                    <div className="mb-4 inline-flex rounded-lg bg-blue-100 p-3">
-                                        <Users className="h-6 w-6 text-blue-600" />
-                                    </div>
-                                    <CardTitle className="text-xl">Wider Customer Reach</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <CardDescription className="text-base">
-                                        Don&apos;t just wait for walk-ins. Capture orders from neighbors who are looking for convenience but trust your quality.
-                                    </CardDescription>
-                                </CardContent>
-                            </Card>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                        >
-                            <Card className="h-full border-2 hover:shadow-lg transition-shadow hover:-translate-y-1">
-                                <CardHeader>
-                                    <div className="mb-4 inline-flex rounded-lg bg-orange-100 p-3">
-                                        <TrendingUp className="h-6 w-6 text-orange-600" />
-                                    </div>
-                                    <CardTitle className="text-xl">Increase Sales Volume</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <CardDescription className="text-base">
-                                        Get scheduled delivery orders daily. Fill the gaps in your day with productive sales, boosting your monthly revenue.
-                                    </CardDescription>
-                                </CardContent>
-                            </Card>
-                        </motion.div>
+                                    <CardHeader className="relative z-10">
+                                        <div className="mb-4 inline-flex rounded-lg bg-green-100 p-3">
+                                            <Image
+                                                src={item.icon}
+                                                alt={item.title}
+                                                width={40}
+                                                height={40}
+                                            />
+                                        </div>
+                                        <CardTitle className="text-xl">{item.title}</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="relative z-10">
+                                        <CardDescription className="text-base">
+                                            {item.description}
+                                        </CardDescription>
+                                    </CardContent>
+                                </Card>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -174,34 +167,32 @@ export default function RetailersPage() {
                                 Forget manual data entry. We sync everything for you.
                             </p>
                             <div className="space-y-4">
-                                <div className="flex items-start gap-3">
-                                    <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <div>
-                                        <p className="font-semibold text-gray-900">Auto-Sync Inventory</p>
-                                        <p className="text-gray-600">When your distributor stocks a product, it appears on your app instantly. No manual typing.</p>
+                                {[
+                                    {
+                                        title: "Auto-Sync Inventory",
+                                        description: "When your distributor stocks a product, it appears on your app instantly. No manual typing.",
+                                    },
+                                    {
+                                        title: "Simple Toggle Control",
+                                        description: "Don't carry a product? Just toggle it 'OFF'. Have it? Toggle 'ON'. That's it.",
+                                    },
+                                    {
+                                        title: "Data-Driven Ordering",
+                                        description: "Make data-driven decisions. The app tells you what to restock based on actual neighborhood demand.",
+                                    },
+                                    {
+                                        title: "One-Tap Restocking",
+                                        description: "Place orders with the distributor for out-of-stock items directly through the app.",
+                                    },
+                                ].map((point, index) => (
+                                    <div key={index} className="flex items-start gap-3">
+                                        <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
+                                        <div>
+                                            <p className="font-semibold text-gray-900">{point.title}</p>
+                                            <p className="text-gray-600">{point.description}</p>
+                                        </div>
                                     </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <div>
-                                        <p className="font-semibold text-gray-900">Simple Toggle Control</p>
-                                        <p className="text-gray-600">Don&apos;t carry a product? Just toggle it &apos;OFF&apos;. Have it? Toggle &apos;ON&apos;. That&apos;s it.</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <div>
-                                        <p className="font-semibold text-gray-900">Data-Driven Ordering</p>
-                                        <p className="text-gray-600">Make data-driven decisions. The app tells you what to restock based on actual neighborhood demand.</p>
-                                    </div>
-                                </div>
-                                <div className="flex items-start gap-3">
-                                    <CheckCircle className="h-6 w-6 text-green-600 flex-shrink-0 mt-0.5" />
-                                    <div>
-                                        <p className="font-semibold text-gray-900">One-Tap Restocking</p>
-                                        <p className="text-gray-600">Place orders with the distributor for out-of-stock items directly through the app.</p>
-                                    </div>
-                                </div>
+                                ))}
                             </div>
                         </motion.div>
 
@@ -213,20 +204,12 @@ export default function RetailersPage() {
                             transition={{ duration: 0.6, delay: 0.2 }}
                             className="relative h-[400px] w-full"
                         >
-                            <div className="flex h-full items-center justify-center rounded-lg bg-gradient-to-br from-blue-50 to-orange-50">
-                                <div className="flex flex-col items-center gap-8">
-                                    <div className="flex items-center gap-4">
-                                        <div className="rounded-lg bg-blue-100 p-6">
-                                            <Server className="h-16 w-16 text-blue-600" />
-                                        </div>
-                                        <ArrowRight className="h-8 w-8 text-gray-400" />
-                                        <div className="rounded-lg bg-orange-100 p-6">
-                                            <Smartphone className="h-16 w-16 text-orange-600" />
-                                        </div>
-                                    </div>
-                                    <p className="text-sm text-gray-600 text-center">Auto-sync from distributor database</p>
-                                </div>
-                            </div>
+                            <Image
+                                src="/images/retailers/Avatars/Database 3d.png"
+                                alt="Database sync visualization"
+                                fill
+                                className="object-contain"
+                            />
                         </motion.div>
                     </div>
                 </div>
@@ -238,48 +221,75 @@ export default function RetailersPage() {
                     <h2 className="mb-12 text-center text-3xl font-bold text-gray-900 sm:text-4xl">
                         Risk-Free Business Model
                     </h2>
-                    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 max-w-4xl mx-auto">
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <Card className="h-full border-2 bg-white">
-                                <CardHeader>
-                                    <div className="mb-4 inline-flex rounded-lg bg-blue-100 p-3">
-                                        <CalendarCheck className="h-6 w-6 text-blue-600" />
-                                    </div>
-                                    <CardTitle className="text-2xl">Guaranteed Monthly Payments</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <CardDescription className="text-base">
-                                        All digital orders are tracked securely. You receive a guaranteed settlement every month directly to your bank account.
-                                    </CardDescription>
-                                </CardContent>
-                            </Card>
-                        </motion.div>
+                    <div className="max-w-5xl mx-auto">
+                        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 items-start">
+                            {/* Retailer Leaning Character */}
+                            <motion.div
+                                initial={{ opacity: 0, x: -20 }}
+                                whileInView={{ opacity: 1, x: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.6 }}
+                                className="relative h-[400px] w-full lg:col-span-1"
+                            >
+                                <Image
+                                    src="/images/retailers/Avatars/Retailer leaning 3d.png"
+                                    alt="Retailer leaning"
+                                    fill
+                                    className="object-contain"
+                                />
+                            </motion.div>
 
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: 0.1 }}
-                        >
-                            <Card className="h-full border-2 bg-white">
-                                <CardHeader>
-                                    <div className="mb-4 inline-flex rounded-lg bg-green-100 p-3">
-                                        <ShieldCheck className="h-6 w-6 text-green-600" />
-                                    </div>
-                                    <CardTitle className="text-2xl">No Upfront Capital Risk</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <CardDescription className="text-base">
-                                        Under the Consignee model, you don&apos;t pay upfront. The distributor gets paid only when you sell on the app. We handle the customer credit.
-                                    </CardDescription>
-                                </CardContent>
-                            </Card>
-                        </motion.div>
+                            {/* Cards - Horizontal Layout */}
+                            <div className="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                                {[
+                                    {
+                                        title: "Guaranteed Monthly Payments",
+                                        description: "All digital orders are tracked accurately. You receive a guaranteed payment every month directly to your bank account.",
+                                        icon: "/images/retailers/Icons/R-Calender.png",
+                                    },
+                                    {
+                                        title: "No Upfront Capital Risk",
+                                        description: "Under the Zero-risk model, you don't pay upfront. Your stock are on your credit. We handle the customer credit.",
+                                        icon: "/images/retailers/Icons/R-protection.png",
+                                    },
+                                ].map((item, index) => (
+                                    <motion.div
+                                        key={index}
+                                        initial={{ opacity: 0, y: 20 }}
+                                        whileInView={{ opacity: 1, y: 0 }}
+                                        viewport={{ once: true }}
+                                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                                    >
+                                        <Card className="h-full border-2 bg-white relative overflow-hidden">
+                                            <div className="absolute inset-0 opacity-5">
+                                                <Image
+                                                    src="/images/retailers/Card Background/R-card section 4.png"
+                                                    alt=""
+                                                    fill
+                                                    className="object-cover"
+                                                />
+                                            </div>
+                                            <CardHeader className="relative z-10">
+                                                <div className="mb-4 inline-flex rounded-lg bg-green-100 p-3">
+                                                    <Image
+                                                        src={item.icon}
+                                                        alt={item.title}
+                                                        width={40}
+                                                        height={40}
+                                                    />
+                                                </div>
+                                                <CardTitle className="text-2xl">{item.title}</CardTitle>
+                                            </CardHeader>
+                                            <CardContent className="relative z-10">
+                                                <CardDescription className="text-base">
+                                                    {item.description}
+                                                </CardDescription>
+                                            </CardContent>
+                                        </Card>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -291,68 +301,58 @@ export default function RetailersPage() {
                         Designed for the Busy Kirana
                     </h2>
                     <div className="grid grid-cols-1 gap-6 md:grid-cols-3 max-w-5xl mx-auto">
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5 }}
-                        >
-                            <Card className="h-full border-2 text-center">
-                                <CardHeader>
-                                    <div className="mb-4 inline-flex rounded-lg bg-orange-100 p-3 mx-auto">
-                                        <Package className="h-6 w-6 text-orange-600" />
+                        {[
+                            {
+                                title: "Zero Inventory Management",
+                                description: "Since inventory syncs from the master catalog, you never have to count, track, or manage stock manually.",
+                                icon: "/images/retailers/Icons/Order.png",
+                            },
+                            {
+                                title: "Scheduled Deliveries",
+                                description: "Focus on running your store. We handle the delivery for every single order. Customers select their slots, you just pack.",
+                                icon: "/images/retailers/Icons/R-delivery.png",
+                            },
+                            {
+                                title: "Lean Operations",
+                                description: "No new delivery boys needed. Work with your existing staff, just pack orders and hand them over to our delivery partners.",
+                                icon: "/images/retailers/Icons/Time.png",
+                            },
+                        ].map((item, index) => (
+                            <motion.div
+                                key={index}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
+                            >
+                                <Card className="h-full border-2 text-center relative overflow-hidden">
+                                    <div className="absolute inset-0 opacity-5">
+                                        <Image
+                                            src="/images/retailers/Card Background/R-card section 5.png"
+                                            alt=""
+                                            fill
+                                            className="object-cover"
+                                        />
                                     </div>
-                                    <CardTitle className="text-xl">Zero Inventory Management</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <CardDescription className="text-base">
-                                        Since inventory syncs from the master catalog, you never have to count stock for the app.
-                                    </CardDescription>
-                                </CardContent>
-                            </Card>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: 0.1 }}
-                        >
-                            <Card className="h-full border-2 text-center">
-                                <CardHeader>
-                                    <div className="mb-4 inline-flex rounded-lg bg-blue-100 p-3 mx-auto">
-                                        <Clock className="h-6 w-6 text-blue-600" />
-                                    </div>
-                                    <CardTitle className="text-xl">Scheduled Deliveries</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <CardDescription className="text-base">
-                                        Stop running instantly for every small order. Customers select time slots (e.g., 2 PM - 4 PM), so you deliver in batches.
-                                    </CardDescription>
-                                </CardContent>
-                            </Card>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ duration: 0.5, delay: 0.2 }}
-                        >
-                            <Card className="h-full border-2 text-center">
-                                <CardHeader>
-                                    <div className="mb-4 inline-flex rounded-lg bg-green-100 p-3 mx-auto">
-                                        <Users className="h-6 w-6 text-green-600" />
-                                    </div>
-                                    <CardTitle className="text-xl">Lean Operations</CardTitle>
-                                </CardHeader>
-                                <CardContent>
-                                    <CardDescription className="text-base">
-                                        No new delivery boys needed. Work with your existing staff, just more efficiently.
-                                    </CardDescription>
-                                </CardContent>
-                            </Card>
-                        </motion.div>
+                                    <CardHeader className="relative z-10">
+                                        <div className="mb-4 inline-flex rounded-lg bg-green-100 p-3 mx-auto">
+                                            <Image
+                                                src={item.icon}
+                                                alt={item.title}
+                                                width={40}
+                                                height={40}
+                                            />
+                                        </div>
+                                        <CardTitle className="text-xl">{item.title}</CardTitle>
+                                    </CardHeader>
+                                    <CardContent className="relative z-10">
+                                        <CardDescription className="text-base">
+                                            {item.description}
+                                        </CardDescription>
+                                    </CardContent>
+                                </Card>
+                            </motion.div>
+                        ))}
                     </div>
                 </div>
             </section>
@@ -369,27 +369,27 @@ export default function RetailersPage() {
                                 {
                                     step: 1,
                                     title: "Request Access",
-                                    description: "Ask your distributor to link your shop to their Chotu Master Network.",
+                                    description: "Ask your distributor to link your store to the Chotu Retailer Network.",
                                 },
                                 {
                                     step: 2,
                                     title: "Auto-Setup",
-                                    description: "Your digital store is created instantly with products from the Distributor&apos;s catalog.",
+                                    description: "Your digital store is created instantly with products from your Chotu distributor's catalog.",
                                 },
                                 {
                                     step: 3,
                                     title: "Toggle Stock",
-                                    description: "Simply mark which items you have in stock using the &apos;In-Stock&apos; toggle.",
+                                    description: "Simply mark which items you have in stock using the 'Available/Out of Stock' toggle.",
                                 },
                                 {
                                     step: 4,
                                     title: "Start Selling",
-                                    description: "Receive orders, pack them, and deliver during the scheduled slot.",
+                                    description: "Receive orders, pack them, and wait for pickup during the scheduled slot.",
                                 },
                                 {
                                     step: 5,
                                     title: "Smart Restock",
-                                    description: "Place orders to distributor for out of stock items from the app itself.",
+                                    description: "Place orders to your distributor for out of stock items from the app itself.",
                                 },
                             ].map((item, index) => (
                                 <motion.div
@@ -402,10 +402,10 @@ export default function RetailersPage() {
                                 >
                                     {/* Connector Line (hidden on mobile) */}
                                     {index < 4 && (
-                                        <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-orange-200 z-0" style={{ width: 'calc(100% - 2rem)' }} />
+                                        <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-green-200 z-0" style={{ width: 'calc(100% - 2rem)' }} />
                                     )}
                                     <div className="relative z-10 text-center">
-                                        <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-orange-600 text-xl font-bold text-white shadow-lg">
+                                        <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-600 text-xl font-bold text-white shadow-lg">
                                             {item.step}
                                         </div>
                                         <h3 className="mb-2 text-lg font-semibold text-gray-900">
@@ -525,7 +525,7 @@ export default function RetailersPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-12 sm:py-16 lg:py-24 bg-gradient-to-r from-orange-600 to-orange-700">
+            <section className="py-12 sm:py-16 lg:py-24 bg-gradient-to-r from-green-500 to-green-600">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-12">
                     <div className="max-w-3xl mx-auto text-center text-white">
                         <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -536,7 +536,7 @@ export default function RetailersPage() {
                         </p>
                         <Button
                             size="lg"
-                            className="rounded-full bg-white text-orange-600 px-8 py-6 text-base hover:bg-gray-100"
+                            className="rounded-full bg-white text-green-600 px-8 py-6 text-base hover:bg-gray-100 font-semibold"
                         >
                             Request Your Distributor
                             <ArrowRight className="ml-2 h-5 w-5" />
