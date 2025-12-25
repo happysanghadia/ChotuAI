@@ -73,7 +73,7 @@ export default function RetailersPage() {
                             className="relative h-[400px] w-full lg:h-[500px] flex items-center justify-center"
                         >
                             <Image
-                                src="/images/retailers/Avatars/Retailer + shop 3d.png"
+                                src="/assets/retailers/Avatars/Retailer + shop 3d.png"
                                 alt="Happy retailer with shop"
                                 width={500}
                                 height={500}
@@ -96,17 +96,17 @@ export default function RetailersPage() {
                             {
                                 title: "Your Digital Storefront",
                                 description: "Get a professional online identity without hiring tech support. Your shop is now open to the entire digital neighbourhood.",
-                                icon: "/images/retailers/Icons/R-Store.png",
+                                icon: "/assets/retailers/Icons/R-Store.png",
                             },
                             {
                                 title: "Wider Customer Reach",
                                 description: "Don't just wait for walk-ins. Capture orders from neighbors who are looking for convenience but trust your quality.",
-                                icon: "/images/retailers/Icons/R-people.png",
+                                icon: "/assets/retailers/Icons/R-people.png",
                             },
                             {
                                 title: "Increase Sales Volume",
                                 description: "Get scheduled delivery orders daily. Fill the gaps in your day with productive sales, boosting your monthly revenue.",
-                                icon: "/images/retailers/Icons/R-Growth.png",
+                                icon: "/assets/retailers/Icons/R-Growth.png",
                             },
                         ].map((item, index) => (
                             <motion.div
@@ -119,7 +119,7 @@ export default function RetailersPage() {
                                 <Card className="h-full border-2 hover:shadow-lg transition-shadow hover:-translate-y-1 relative overflow-hidden">
                                     <div className="absolute inset-0 opacity-5">
                                         <Image
-                                            src="/images/retailers/Card Background/R-card section 2.png"
+                                            src="/assets/retailers/Card Background/R-card section 2.png"
                                             alt=""
                                             fill
                                             className="object-cover"
@@ -205,7 +205,7 @@ export default function RetailersPage() {
                             className="relative h-[400px] w-full"
                         >
                             <Image
-                                src="/images/retailers/Avatars/Database 3d.png"
+                                src="/assets/retailers/Avatars/Database 3d.png"
                                 alt="Database sync visualization"
                                 fill
                                 className="object-contain"
@@ -232,7 +232,7 @@ export default function RetailersPage() {
                                 className="relative h-[400px] w-full lg:col-span-1"
                             >
                                 <Image
-                                    src="/images/retailers/Avatars/Retailer leaning 3d.png"
+                                    src="/assets/retailers/Avatars/Retailer leaning 3d.png"
                                     alt="Retailer leaning"
                                     fill
                                     className="object-contain"
@@ -245,12 +245,12 @@ export default function RetailersPage() {
                                     {
                                         title: "Guaranteed Monthly Payments",
                                         description: "All digital orders are tracked accurately. You receive a guaranteed payment every month directly to your bank account.",
-                                        icon: "/images/retailers/Icons/R-Calender.png",
+                                        icon: "/assets/retailers/Icons/R-Calender.png",
                                     },
                                     {
                                         title: "No Upfront Capital Risk",
                                         description: "Under the Zero-risk model, you don't pay upfront. Your stock are on your credit. We handle the customer credit.",
-                                        icon: "/images/retailers/Icons/R-protection.png",
+                                        icon: "/assets/retailers/Icons/R-protection.png",
                                     },
                                 ].map((item, index) => (
                                     <motion.div
@@ -263,7 +263,7 @@ export default function RetailersPage() {
                                         <Card className="h-full border-2 bg-white relative overflow-hidden">
                                             <div className="absolute inset-0 opacity-5">
                                                 <Image
-                                                    src="/images/retailers/Card Background/R-card section 4.png"
+                                                    src="/assets/retailers/Card Background/R-card section 4.png"
                                                     alt=""
                                                     fill
                                                     className="object-cover"
@@ -305,17 +305,17 @@ export default function RetailersPage() {
                             {
                                 title: "Zero Inventory Management",
                                 description: "Since inventory syncs from the master catalog, you never have to count, track, or manage stock manually.",
-                                icon: "/images/retailers/Icons/Order.png",
+                                icon: "/assets/retailers/Icons/Order.png",
                             },
                             {
                                 title: "Scheduled Deliveries",
                                 description: "Focus on running your store. We handle the delivery for every single order. Customers select their slots, you just pack.",
-                                icon: "/images/retailers/Icons/R-delivery.png",
+                                icon: "/assets/retailers/Icons/R-delivery.png",
                             },
                             {
                                 title: "Lean Operations",
                                 description: "No new delivery boys needed. Work with your existing staff, just pack orders and hand them over to our delivery partners.",
-                                icon: "/images/retailers/Icons/Time.png",
+                                icon: "/assets/retailers/Icons/Time.png",
                             },
                         ].map((item, index) => (
                             <motion.div
@@ -328,7 +328,7 @@ export default function RetailersPage() {
                                 <Card className="h-full border-2 text-center relative overflow-hidden">
                                     <div className="absolute inset-0 opacity-5">
                                         <Image
-                                            src="/images/retailers/Card Background/R-card section 5.png"
+                                            src="/assets/retailers/Card Background/R-card section 5.png"
                                             alt=""
                                             fill
                                             className="object-cover"

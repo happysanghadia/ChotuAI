@@ -35,25 +35,25 @@ export default function Home() {
         {
             title: "Trusted & Safe",
             description: "Shop from your neighborhood kirana store you know and trust.",
-            image: "/images/consumers/Avatars/Chotu 3d trust.png",
+            image: "/assets/consumers/Avatars/Chotu 3d trust.png",
         },
         {
             title: "Support Local",
             description: "Every purchase supports your local community's businesses.",
-            image: "/images/consumers/Avatars/Chotu 3d delivery.png",
+            image: "/assets/consumers/Avatars/Chotu 3d delivery.png",
         },
         {
             title: "Digital Convenience",
             description: "Modern shopping experience with traditional trust.",
-            image: "/images/consumers/Avatars/Chotu 3d digital.png",
+            image: "/assets/consumers/Avatars/Chotu 3d digital.png",
         },
     ]
 
     const stats = [
-        { number: "10,000+", label: "Happy Families", image: "/images/consumers/Avatars/Family 3d stats.png" },
-        { number: "500+", label: "Local Kiranas", image: "/images/consumers/Avatars/Store 3d.png" },
-        { number: "50+", label: "Distributors", image: "/images/consumers/Avatars/Distributor 3d stats.png" },
-        { number: "24/7", label: "AI Support", image: "/images/consumers/Avatars/Chotu 3d help center.png" },
+        { number: "10,000+", label: "Happy Families", image: "/assets/consumers/Avatars/Family 3d stats.png" },
+        { number: "500+", label: "Local Kiranas", image: "/assets/consumers/Avatars/Store 3d.png" },
+        { number: "50+", label: "Distributors", image: "/assets/consumers/Avatars/Distributor 3d stats.png" },
+        { number: "24/7", label: "AI Support", image: "/assets/consumers/Avatars/Chotu 3d help center.png" },
     ]
 
     return (
@@ -103,7 +103,7 @@ export default function Home() {
                             className="relative h-[400px] w-full lg:h-[500px] flex items-center justify-center"
                         >
                             <Image
-                                src="/images/consumers/Avatars/Chotu 3d delivery.png"
+                                src="/assets/consumers/Avatars/Chotu 3d delivery.png"
                                 alt="Chotu AI Character"
                                 width={500}
                                 height={500}
@@ -132,7 +132,7 @@ export default function Home() {
                                 className="relative h-[400px] w-full"
                             >
                                 <Image
-                                    src="/images/consumers/Avatars/Family 3d figure.png"
+                                    src="/assets/consumers/Avatars/Family 3d figure.png"
                                     alt="Family"
                                     fill
                                     className="object-contain"
@@ -192,7 +192,7 @@ export default function Home() {
                             <Card className="border-2 hover:shadow-lg transition-shadow relative overflow-hidden bg-white">
                                 <div className="absolute inset-0 opacity-5">
                                     <Image
-                                        src="/images/consumers/Cards Background/Section 2 Card.png"
+                                        src="/assets/consumers/Cards Background/Section 2 Card.png"
                                         alt=""
                                         fill
                                         className="object-cover"
@@ -201,7 +201,7 @@ export default function Home() {
                                 <CardContent className="p-8 relative z-10">
                                     <div className="mb-4 inline-flex rounded-lg bg-orange-100 p-3">
                                         <Image
-                                            src="/images/consumers/Icons/Chat.png"
+                                            src="/assets/consumers/Icons/Chat.png"
                                             alt="Chat"
                                             width={40}
                                             height={40}
@@ -226,7 +226,7 @@ export default function Home() {
                             <Card className="border-2 hover:shadow-lg transition-shadow relative overflow-hidden bg-white">
                                 <div className="absolute inset-0 opacity-5">
                                     <Image
-                                        src="/images/consumers/Cards Background/Section 2 Card.png"
+                                        src="/assets/consumers/Cards Background/Section 2 Card.png"
                                         alt=""
                                         fill
                                         className="object-cover"
@@ -235,7 +235,7 @@ export default function Home() {
                                 <CardContent className="p-8 relative z-10">
                                     <div className="mb-4 inline-flex rounded-lg bg-orange-100 p-3">
                                         <Image
-                                            src="/images/consumers/Icons/Store.png"
+                                            src="/assets/consumers/Icons/Store.png"
                                             alt="Store"
                                             width={40}
                                             height={40}
@@ -268,7 +268,7 @@ export default function Home() {
                                 className="relative h-[300px] w-full flex items-center justify-center lg:order-1"
                             >
                                 <Image
-                                    src="/images/consumers/Avatars/Chotu 3d wallet.png"
+                                    src="/assets/consumers/Avatars/Chotu 3d wallet.png"
                                     alt="Chotu with Wallet"
                                     fill
                                     className="object-contain"
@@ -286,7 +286,7 @@ export default function Home() {
                                 <Card className="border-2 border-gray-200 bg-white relative overflow-hidden shadow-lg">
                                     <div className="absolute inset-0 opacity-5">
                                         <Image
-                                            src="/images/consumers/Cards Background/Section 3 Card.png"
+                                            src="/assets/consumers/Cards Background/Section 3 Card.png"
                                             alt=""
                                             fill
                                             className="object-cover"
@@ -374,7 +374,7 @@ export default function Home() {
                                 <Card className="border-2 hover:shadow-lg transition-shadow relative overflow-hidden h-full bg-white">
                                     <div className="absolute inset-0 opacity-5">
                                         <Image
-                                            src="/images/consumers/Cards Background/Section 5 Card.png"
+                                            src="/assets/consumers/Cards Background/Section 5 Card.png"
                                             alt=""
                                             fill
                                             className="object-cover"
@@ -418,7 +418,7 @@ export default function Home() {
                                 <Card className="text-center border-2 hover:shadow-lg transition-shadow relative overflow-hidden bg-white">
                                     <div className="absolute inset-0 opacity-10">
                                         <Image
-                                            src="/images/consumers/Cards Background/Stats card.png"
+                                            src="/assets/consumers/Cards Background/Stats card.png"
                                             alt=""
                                             fill
                                             className="object-cover"

@@ -37,25 +37,25 @@ export default function DistributorsPage() {
             icon: Target,
             title: "Scheme Management",
             description: "Create offers and approve retailer offers instantly.",
-            image: "/images/distributors/Icons/Scheme.png",
+            image: "/assets/distributors/Icons/Scheme.png",
         },
         {
             icon: Network,
             title: "Targeting",
             description: "Push targeted schemes directly to household AI agents.",
-            image: "/images/distributors/Icons/Target.png",
+            image: "/assets/distributors/Icons/Target.png",
         },
         {
             icon: Shield,
             title: "Risk Free",
             description: "Zero credit risk. Secure payments.",
-            image: "/images/distributors/Icons/Protection.png",
+            image: "/assets/distributors/Icons/Protection.png",
         },
         {
             icon: Users,
             title: "Network",
             description: "Reach the end consumer through your existing authorized retailer network.",
-            image: "/images/distributors/Icons/People 80px.png",
+            image: "/assets/distributors/Icons/People 80px.png",
         },
     ]
 
@@ -65,28 +65,28 @@ export default function DistributorsPage() {
             title: "Real-Time Analytics",
             description: "Track actual consumption patterns, not just purchase orders. See what households really buy and when they buy it.",
             details: "Get insights into consumer behavior, seasonal trends, and product performance across your entire network.",
-            image: "/images/distributors/Icons/Analytics.png",
+            image: "/assets/distributors/Icons/Analytics.png",
         },
         {
             icon: Zap,
             title: "Instant Scheme Deployment",
             description: "Launch promotional offers in minutes. Push them directly to relevant households through AI agents.",
             details: "No more waiting for retailers to communicate offers. Your schemes reach customers instantly and automatically.",
-            image: "/images/distributors/Icons/Fast.png",
+            image: "/assets/distributors/Icons/Fast.png",
         },
         {
             icon: CreditCard,
             title: "Secure Payment Gateway",
             description: "All transactions are secure and digital. Get paid on time, every time, with zero credit risk.",
             details: "Our wallet system ensures you receive payments directly, eliminating the traditional credit cycle and payment delays.",
-            image: "/images/distributors/Icons/Protection 40px.png",
+            image: "/assets/distributors/Icons/Protection 40px.png",
         },
         {
             icon: TrendingUp,
             title: "Growth Through Data",
             description: "Leverage consumption data to optimize inventory, pricing, and marketing strategies.",
             details: "Make data-driven decisions about which products to promote, when to launch schemes, and how to expand your reach.",
-            image: "/images/distributors/Icons/Growth.png",
+            image: "/assets/distributors/Icons/Growth.png",
         },
     ]
 
@@ -143,7 +143,7 @@ export default function DistributorsPage() {
                             className="relative h-[400px] w-full lg:h-[500px] flex items-center justify-center"
                         >
                             <Image
-                                src="/images/distributors/Avatars/Distributor 3d.png"
+                                src="/assets/distributors/Avatars/Distributor 3d.png"
                                 alt="Distributor Character"
                                 width={500}
                                 height={500}
@@ -194,7 +194,7 @@ export default function DistributorsPage() {
                                 <Card className="border-2 hover:shadow-lg transition-shadow relative overflow-hidden h-full">
                                     <div className="absolute inset-0 opacity-5">
                                         <Image
-                                            src="/images/distributors/Card background/D-Card section 2.png"
+                                            src="/assets/distributors/Card background/D-Card section 2.png"
                                             alt=""
                                             fill
                                             className="object-cover"
@@ -247,7 +247,7 @@ export default function DistributorsPage() {
                                         <Card className="border-2 hover:shadow-lg transition-shadow relative overflow-hidden">
                                             <div className="absolute inset-0 opacity-5">
                                                 <Image
-                                                    src="/images/distributors/Card background/D-Card section 3.png"
+                                                    src="/assets/distributors/Card background/D-Card section 3.png"
                                                     alt=""
                                                     fill
                                                     className="object-cover"
@@ -286,7 +286,7 @@ export default function DistributorsPage() {
                                 className="relative h-[400px] w-full hidden lg:block"
                             >
                                 <Image
-                                    src="/images/distributors/Avatars/Distributor digital 3d.png"
+                                    src="/assets/distributors/Avatars/Distributor digital 3d.png"
                                     alt="Distributor with Smartphone"
                                     fill
                                     className="object-contain"
@@ -306,7 +306,7 @@ export default function DistributorsPage() {
                                         <Card className="border-2 hover:shadow-lg transition-shadow relative overflow-hidden">
                                             <div className="absolute inset-0 opacity-5">
                                                 <Image
-                                                    src="/images/distributors/Card background/D-Card section 4.png"
+                                                    src="/assets/distributors/Card background/D-Card section 4.png"
                                                     alt=""
                                                     fill
                                                     className="object-cover"
@@ -354,7 +354,7 @@ export default function DistributorsPage() {
                                 className="relative h-[400px] w-full"
                             >
                                 <Image
-                                    src="/images/distributors/Avatars/Distributor + chotu 3d.png"
+                                    src="/assets/distributors/Avatars/Distributor + chotu 3d.png"
                                     alt="Distributor and Chotu"
                                     fill
                                     className="object-contain"
@@ -376,7 +376,7 @@ export default function DistributorsPage() {
                                     <Card key={index} className="border-2 relative overflow-hidden">
                                         <div className="absolute inset-0 opacity-5">
                                             <Image
-                                                src="/images/distributors/Card background/D-Card section 5.png"
+                                                src="/assets/distributors/Card background/D-Card section 5.png"
                                                 alt=""
                                                 fill
                                                 className="object-cover"
@@ -438,7 +438,7 @@ export default function DistributorsPage() {
                                 <Card className="border-2 relative overflow-hidden">
                                     <div className="absolute inset-0 opacity-5">
                                         <Image
-                                            src="/images/distributors/Card background/D-card section 6.png"
+                                            src="/assets/distributors/Card background/D-card section 6.png"
                                             alt=""
                                             fill
                                             className="object-cover"
