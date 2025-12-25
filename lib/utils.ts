@@ -25,7 +25,7 @@ export function getAssetPath(path: string): string {
                 data: { inputPath: path, basePath, cleanPath, finalPath, NODE_ENV: process.env.NODE_ENV },
                 timestamp: Date.now(),
             }) + '\n');
-        } catch (e) {}
+        } catch (e) { }
     } else {
         // Client-side: log via fetch
         fetch('http://127.0.0.1:7242/ingest/f6931dd9-a530-4e4a-90b1-7afa6d443063', {
@@ -40,10 +40,10 @@ export function getAssetPath(path: string): string {
                 data: { inputPath: path, basePath, cleanPath, finalPath, NODE_ENV: process.env.NODE_ENV },
                 timestamp: Date.now(),
             }),
-        }).catch(() => {});
+        }).catch(() => { });
     }
     // #endregion agent log
-    
+
     // For static exports with basePath, we MUST manually prepend basePath
     // Next.js Image component does NOT automatically handle basePath for static exports
     const basePathValue = process.env.NODE_ENV === 'production' ? '/ChotuAI' : '';
